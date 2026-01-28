@@ -20,7 +20,7 @@ jobs:
         python-version: '3.10'
     - name: install wheel dependencies
       run: |
-        pip3 install wheel
+        pip3 install "wheel<0.40.0"
     - name: get llvm-project
       run: |
         choco install wget git
